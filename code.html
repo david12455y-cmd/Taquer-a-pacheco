@@ -1,0 +1,951 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&amp;family=Rubik:wght@600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}html{min-height:100%;}body{min-height:100vh;overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:auto;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary": "#ffffff",
+          "on-tertiary-fixed-variant": "#324f00",
+          "on-surface-variant": "#5d3f3c",
+          "surface-container-low": "#fff1eb",
+          "on-primary": "#ffffff",
+          "surface-dim": "#ffd0b8",
+          "surface-variant": "#ffdbc9",
+          "surface-container-high": "#ffe2d5",
+          "secondary-fixed": "#ffe08a",
+          "on-primary-fixed": "#410002",
+          "primary-fixed": "#ffdad5",
+          "primary-container": "#d7191c",
+          "inverse-primary": "#ffb4ab",
+          "on-error-container": "#93000a",
+          "tertiary-container": "#4f7800",
+          "on-tertiary": "#ffffff",
+          "surface": "#fff8f6",
+          "on-surface": "#2e1505",
+          "error": "#ba1a1a",
+          "on-secondary-fixed-variant": "#574400",
+          "surface-container-lowest": "#ffffff",
+          "outline": "#926f6a",
+          "surface-tint": "#c00010",
+          "secondary": "#745b00",
+          "inverse-on-surface": "#ffede5",
+          "secondary-container": "#fdcc16",
+          "secondary-fixed-dim": "#f1c100",
+          "on-secondary-fixed": "#241a00",
+          "on-primary-fixed-variant": "#930009",
+          "surface-container": "#ffeae0",
+          "inverse-surface": "#472917",
+          "on-tertiary-fixed": "#121f00",
+          "tertiary": "#3d5d00",
+          "on-background": "#2e1505",
+          "on-tertiary-container": "#ceff85",
+          "on-error": "#ffffff",
+          "primary-fixed-dim": "#ffb4ab",
+          "tertiary-fixed-dim": "#9cd83e",
+          "surface-bright": "#fff8f6",
+          "surface-container-highest": "#ffdbc9",
+          "on-secondary-container": "#6e5700",
+          "outline-variant": "#e7bdb8",
+          "error-container": "#ffdad6",
+          "background": "#fff8f6",
+          "on-primary-container": "#ffece9",
+          "primary": "#ae000d",
+          "tertiary-fixed": "#b7f558"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "space-xl": "2.5rem",
+          "gutter": "1rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "margin": "1rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-xl": [
+            "Rubik"
+          ],
+          "body-sm": [
+            "Nunito Sans"
+          ],
+          "label-sm": [
+            "Rubik"
+          ],
+          "label-lg": [
+            "Rubik"
+          ],
+          "body-md": [
+            "Nunito Sans"
+          ],
+          "headline-xl-mobile": [
+            "Rubik"
+          ],
+          "headline-lg": [
+            "Rubik"
+          ],
+          "label-md": [
+            "Rubik"
+          ],
+          "headline-sm": [
+            "Rubik"
+          ],
+          "headline-md": [
+            "Rubik"
+          ],
+          "body-lg": [
+            "Nunito Sans"
+          ],
+          "headline-lg-mobile": [
+            "Rubik"
+          ]
+        },
+        "fontSize": {
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "900"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "16px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "900"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-md": [
+            "14px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.03em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "800"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_4px_16px_rgba(46,21,5,0.08)]"><div class="bg-primary-container text-on-primary text-center py-1 px-margin text-label-sm font-label-sm uppercase tracking-wider flex items-center justify-center gap-space-xs"></div><div class="h-20 max-w-7xl mx-auto px-margin lg:px-space-xl flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="relative flex items-center justify-center w-12 h-12 bg-secondary-container rounded-lg shadow-[0_2px_4px_rgba(46,21,5,0.15)]"><svg class="w-10 h-10 drop-shadow-sm" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 L88 25 L88 75 L50 95 L12 75 L12 25 Z" fill="#FDCC16" stroke="#745B00" stroke-width="4"></path><ellipse cx="50" cy="28" fill="#745B00" rx="24" ry="7"></ellipse><path d="M40 25 C40 16 60 16 60 25 Z" fill="#AE000D"></path><path d="M48 30 C56 34 58 56 50 72 C46 64 42 50 44 38 C44 32 46 30 48 30 Z" fill="#D7191C"></path><path d="M38 52 Q50 48 62 52 Q50 62 38 52 Z" fill="#2E1505"></path><circle cx="44" cy="42" fill="#2E1505" r="2.5"></circle><circle cx="54" cy="42" fill="#2E1505" r="2.5"></circle></svg></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-black text-primary leading-tight tracking-tight uppercase">Taquería Pacheco</span><span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest">Angostura, Sinaloa</span></div></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="bg-surface-variant text-on-surface font-label-md rounded-lg"></nav></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-low py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-margin lg:px-space-xl grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md z-10">
+<!-- Live status chip -->
+<div class="inline-flex items-center gap-space-xs self-start bg-surface px-space-md py-1 rounded-full shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold tracking-wide">Abierto hoy hasta las 11:00 pm</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl font-black text-on-surface tracking-tight leading-none uppercase">
+          El sabor de siempre en el <span class="text-primary underline decoration-secondary-container decoration-wavy">centro de Angostura</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Tacos, mixtas, tortas, planas y mucho más. Buen sazón y buen precio todos los días. Carne asada al carbón y tortillas calientitas recién doradas.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+
+
+</div>
+<!-- Norteño slogan pill -->
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: &quot;FILL&quot; 1;">local_fire_department</span>
+<span class="italic font-bold">"¡Aquí se come rico con precios <br>&nbsp; &nbsp;competitivos"</span>
+</div>
+</div>
+<!-- Hero Visual Composition -->
+<div class="lg:col-span-5 relative flex justify-center items-center">
+<div class="relative w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-xl bg-surface-container">
+<img alt="Mixtas doradas a la plancha de Taquería Pacheco" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6T7kzmT7QE2xlHz0cbxods4sWa3CitcqKkwUFTds1TzD4CeqXZDT7KWX8kdlsR0gxRTVMdWLxVNIVDuWGCPmhV0Noyxq-B5PqB8ECnwe_MhG8m2xf6LuwH0af0KJTwdz1tmEBk2hZMpMGohaY3xTi5soTsWB9BivR5zoZG4r9K-xIjHjDIPI6Jtmz83Bj5cV3UQWWoX6FoN_FvEn3C9fTUIz0zN8JkxqUmiTf_9TsuRBjXn6p6BJD5A">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="bg-secondary-container text-on-secondary-container text-label-sm font-label-sm uppercase font-black px-space-sm py-0.5 rounded self-start">Favorito Sinaloense</span>
+<span class="font-headline-sm text-headline-sm text-surface-container-lowest font-black">Mixtas en Harina Dorada</span>
+</div>
+</div>
+<!-- Overlapping Badge Plaque -->
+<div class="absolute -bottom-4 -left-4 bg-secondary-container text-on-secondary-container px-space-md py-space-sm rounded-lg shadow-lg flex items-center gap-space-xs transform -rotate-3">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<span class="font-headline-sm text-label-md font-black uppercase">100% Calidad Pacheco</span>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK INFO BANNER (3 CÁPSULAS) -->
+<section class="w-full bg-surface-container py-space-lg">
+<div class="max-w-7xl mx-auto px-margin lg:px-space-xl grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface rounded-xl p-space-md flex items-center gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-variant text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">schedule</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Lunes a Domingo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">8:00 am – 11:00 pm</span>
+</div>
+</div>
+<div class="bg-surface rounded-xl p-space-md flex items-center gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-variant text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">moped</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Servicio a Domicilio</span>
+<a class="font-body-sm text-body-sm text-primary font-bold hover:underline" href="tel:6971080563">Tel: 697 108 0563</a>
+</div>
+</div>
+<div class="bg-surface rounded-xl p-space-md flex items-center gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-variant text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">savings</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Precios Accesibles</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Para toda la familia de Angostura</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FAVORITOS DE LA CASA -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-margin lg:px-space-xl flex flex-col gap-space-lg">
+<!-- Ribbon Header Plaque -->
+<div class="flex flex-col items-center text-center">
+<div class="bg-secondary-container text-on-secondary-container px-space-lg py-1.5 rounded shadow-sm inline-block transform -rotate-1 mb-space-xs">
+<span class="font-headline-sm text-headline-sm font-black uppercase tracking-wider">Favoritos de la Casa</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+          Los reyes de la plancha y el asador que no te puedes perder en tu visita.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- 1: Mixtas -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col group">
+<div class="relative h-56 overflow-hidden">
+<img alt="Mixtas Taquería Pacheco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6T7kzmT7QE2xlHz0cbxods4sWa3CitcqKkwUFTds1TzD4CeqXZDT7KWX8kdlsR0gxRTVMdWLxVNIVDuWGCPmhV0Noyxq-B5PqB8ECnwe_MhG8m2xf6LuwH0af0KJTwdz1tmEBk2hZMpMGohaY3xTi5soTsWB9BivR5zoZG4r9K-xIjHjDIPI6Jtmz83Bj5cV3UQWWoX6FoN_FvEn3C9fTUIz0zN8JkxqUmiTf_9TsuRBjXn6p6BJD5A">
+<span class="absolute top-space-sm left-space-sm bg-primary text-on-primary text-label-sm font-label-sm font-bold uppercase px-space-sm py-0.5 rounded shadow-sm">Especialidad</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">Mixtas</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tortilla de harina bien dorada rellena de carne asada, queso derretido, repollo y cebolla morada.</p>
+</div>
+<a class="self-start text-primary hover:text-primary-container font-label-md text-label-md font-bold flex items-center gap-space-xs pt-space-xs" href="#menu-completo">
+<span class="">Ver en el menú</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 2: Plana Especial -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col group">
+<div class="relative h-56 overflow-hidden">
+<img alt="Plana con carne asada abundante" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVwx42RMFh1RoG2_JDUXWzSqCIgB8Y9zlxZxCvGoSi0zf5D7dCBj8gwRbok7EBBBFpVF41ya8DP41fkqez_mnJfI25nrn4SodQKghgb0-ZsEC43QOGfr1_nVIPNgNCNl9-nWvw7nkKFg0W56QdNRq23JLVSEB3uJ_c2ns9dubrnPnGuSYTYUZsHFf19w3u_VcCBkgXEju57nXmxUwzE5P71b8CO0AgSB_NK25iriGuorXWTeCRf4Gt6w">
+<span class="absolute top-space-sm left-space-sm bg-secondary text-on-secondary text-label-sm font-label-sm font-bold uppercase px-space-sm py-0.5 rounded shadow-sm">Gigante</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">Plana Especial</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Carne asada monumental sobre tortilla tostada crujiente, cebollita asada, chile toreado y guacamole.</p>
+</div>
+<a class="self-start text-primary hover:text-primary-container font-label-md text-label-md font-bold flex items-center gap-space-xs pt-space-xs" href="#menu-completo">
+<span class="">Ver en el menú</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 3: Tortita Kids -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col group">
+<div class="relative h-56 overflow-hidden">
+<img alt="Tortita Kids con aguacate y carne" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwvO2avTbQ7sZ-DIvA3ohSqzqTY65nJWjiSNLhu-ZVG51hMq_ulg8-yB4JzL1Dn68ak94-CkYmUoJUFwm6T857uxuvPGSA2kmRvS0y6UJS_A-B1SwbTEuLud7jREiQQx8McD4wunk-B_Dh_FsA7WsXAmEgBkQ5tyoLWtETzczUVz0VSoCD_vXwW7da9VMZI8c5lal2H9-K4xCY13pwbHIFDhipO_UHOI76rVf7QWO_Dj79bIMFUHE1xg">
+<span class="absolute top-space-sm left-space-sm bg-tertiary-container text-on-tertiary text-label-sm font-label-sm font-bold uppercase px-space-sm py-0.5 rounded shadow-sm">Para Niños</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">Tortita Kids</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tamaño ideal para los pequeños. Pan suave tostado, carne jugosa, aguacate fresquecito y aderezo suave.</p>
+</div>
+<a class="self-start text-primary hover:text-primary-container font-label-md text-label-md font-bold flex items-center gap-space-xs pt-space-xs" href="#menu-completo">
+<span class="">Ver en el menú</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 4: Tacos de Maíz y Harina -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col group">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Tacos tradicionales de carne asada estilo Sinaloa servidos en platos rojos con cebolla asada y salsas mexicanas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPaW4HrOYV3Qls-v8nSg-VHO9kFAcs-3O1p82GXE8beh2_TNhFdjGZ2rRWSc-Dp1VTp73NZsZrkFlay7hRx_26iCAqpQp8KNRdqWETSKJLMZbqT8c5ntCUfL3i4PWSCMElffedytHFNZEAZE489ga2uhUuTB0lVVRHY41UQOi8RF3qQLdvIXi6-Df1BIWdGTG-LwmM6yLwpezUK1ceoQQMbnZ3xsmDQ0FtgvjHHAWD">
+<span class="absolute top-space-sm left-space-sm bg-primary text-on-primary text-label-sm font-label-sm font-bold uppercase px-space-sm py-0.5 rounded shadow-sm">Clásicos</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">Tacos de Maíz y Harina</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Carne asada recién picada al carbón sobre tortillas dobles calientes acompañadas con repollo y limón.</p>
+</div>
+<a class="self-start text-primary hover:text-primary-container font-label-md text-label-md font-bold flex items-center gap-space-xs pt-space-xs" href="#menu-completo">
+<span class="">Ver en el menú</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 5: Papa Asada -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col group">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Papa asada rellena con carne asada, mantequilla derretida, queso fundido y crema servida en plato rojo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyGkylkmIwbw0HujLgkhPKdWhR9lfaFQuiZnBMkjYtv4zAcx672EQSkyz-XrwSpagTtMub5mB9q5VAi2ahKggKEkQaYOgCfxYkU1vtY8NlHQ6AOfQE6eZ5HRsErajJHbhlCgyuIml-vUTHYMBCvJDMo1rZcoJvMU-9ATXHOJFD2XKqY1MRQMA4zcE49PtxU4WPnV-UME0qc7-aZIFcU0sdXqadT2_WZQ2M1ebeJXJc">
+<span class="absolute top-space-sm left-space-sm bg-secondary-container text-on-secondary-container text-label-sm font-label-sm font-bold uppercase px-space-sm py-0.5 rounded shadow-sm">Popular</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">Papa Asada</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Papa suave machacada con abundante mantequilla, queso fundido, crema y una porción generosa de asada.</p>
+</div>
+<a class="self-start text-primary hover:text-primary-container font-label-md text-label-md font-bold flex items-center gap-space-xs pt-space-xs" href="#menu-completo">
+<span class="">Ver en el menú</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 6: Vampira y Chorreada -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col group">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Auténtica chorreada y vampira sinaloense con asiento de cerdo, queso chihuahua derretido y carne asada dorada" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi1QLSCHlt9xeVUqycIw_sUbCGyC7r2f7dyVyQWMv1FLMVhR0e7XMNWMOc_0_Tjca50QYDRJ1xYMyvptbwuQ794VrsDHKAvma0pFPB-A4R3lzEMsXeGb1t5JzpDlZ0UjiePc1w99NMiE49ZGhXXw7aWu7GLXgxK-9bMpxzdhGi8Qvmjl218K6kdZ1wp6rKIzHlTEudPKRkSEOUQc0LpsJaRE5UsypIvHN57kiEAhVK">
+<span class="absolute top-space-sm left-space-sm bg-primary-container text-on-primary text-label-sm font-label-sm font-bold uppercase px-space-sm py-0.5 rounded shadow-sm">Tradición</span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-sm">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface block">Vampira &amp; Chorreada</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tostada con asiento sinaloense, costra de queso dorado derretido, carne asada y salsitas picosas.</p>
+</div>
+<a class="self-start text-primary hover:text-primary-container font-label-md text-label-md font-bold flex items-center gap-space-xs pt-space-xs" href="#menu-completo">
+<span class="">Ver en el menú</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MENÚ COMPLETO INTERACTIVO -->
+<section class="w-full py-space-xl bg-surface-container-low" id="menu-completo">
+<div class="max-w-7xl mx-auto px-margin lg:px-space-xl flex flex-col gap-space-lg">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase font-black text-primary tracking-widest block mb-1">Carta Tradicional</span>
+<h2 class="font-headline-lg text-headline-lg font-black text-on-surface uppercase">Menú Pacheco</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Preparado al momento con ingredientes frescos, salsas de la casa y el sazón característico de Angostura.
+        </p>
+</div>
+<!-- Category Filter Chips -->
+<div class="flex items-center justify-center flex-wrap gap-space-xs" id="menu-filter-container">
+<button class="menu-filter-btn px-space-md py-1.5 rounded-full font-label-md text-label-md font-bold transition-all shadow-sm bg-surface text-on-surface-variant" data-category="all" onclick="filterMenu('all')">
+          Todos
+        </button>
+<button class="menu-filter-btn px-space-md py-1.5 rounded-full font-label-md text-label-md font-bold transition-all hover:text-on-surface shadow-sm bg-surface text-on-surface-variant" data-category="tacos" onclick="filterMenu('tacos')">
+          Tacos
+        </button>
+<button class="menu-filter-btn px-space-md py-1.5 rounded-full font-label-md text-label-md font-bold transition-all hover:text-on-surface shadow-sm bg-surface text-on-surface-variant" data-category="mixtas" onclick="filterMenu('mixtas')">
+          Mixtas
+        </button>
+<button class="menu-filter-btn px-space-md py-1.5 rounded-full font-label-md text-label-md font-bold transition-all hover:text-on-surface shadow-sm bg-surface text-on-surface-variant" data-category="tortas" onclick="filterMenu('tortas')">
+          Tortas
+        </button>
+<button class="menu-filter-btn px-space-md py-1.5 rounded-full font-label-md text-label-md font-bold transition-all hover:text-on-surface shadow-sm bg-surface text-on-surface-variant" data-category="especialidades" onclick="filterMenu('especialidades')">
+          Especialidades
+        </button>
+
+<button class="menu-filter-btn px-space-md py-1.5 rounded-full font-label-md text-label-md font-bold transition-all hover:text-on-surface shadow-sm bg-surface text-on-surface-variant" data-category="bebidas" onclick="filterMenu('bebidas')">
+          Bebidas
+        </button>
+</div>
+<!-- Menu Items Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="menu-items-grid">
+<!-- Tacos de maíz -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="tacos" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Tacos de Maíz</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Doble tortilla de maíz doradita, carne asada al carbón, repollo, cebolla y cilantro.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Tacos</span>
+
+</div>
+</div>
+<!-- Tacos de harina -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="tacos" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Tacos de Harina</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tortilla de harina suave o dorada en la plancha con generosa porción de carne asada.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Tacos</span>
+
+</div>
+</div>
+<!-- Tacos de tripa -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="tacos" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Tacos de Tripa</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tripa limpia doradita en comal a fuego lento, textura crujiente y sazón inigualable.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Tacos</span>
+
+</div>
+</div>
+<!-- Mixtas en harina -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="mixtas" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Mixtas en Harina</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tortilla de harina con carne asada jugosa, queso fundido que estira y guarnición fresca.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-primary font-bold uppercase">Recomendado</span>
+
+</div>
+</div>
+<!-- Torta de asada -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="tortas" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Torta de Asada</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Telera suave con mantequilla tostada, carne asada, lechuga, aguacate y mayonesa.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Tortas</span>
+
+</div>
+</div>
+<!-- Torta de cochinita -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="tortas" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Torta de Cochinita</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cochinita tierna con especias tradicionales, cebollita morada con chile y pan doradito.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Tortas</span>
+
+</div>
+</div>
+<!-- Tortita Kids -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="ninos tortas" style="display: flex;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Tortita Kids</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Versión especial pequeña para consentir a los niños: carne suavecita, aguacate y pan tierno.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-tertiary font-bold uppercase">Niños</span>
+
+</div>
+</div>
+<!-- Plana -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="especialidades" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Plana</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tostadón gigante cubierto de carne asada abundante con chiles toreados y guacamole.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-primary font-bold uppercase">Especialidad</span>
+
+</div>
+</div>
+<!-- Papa asada -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="especialidades" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Papa Asada</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Papa horneada al carbón con mantequilla, queso fundido, crema y carne asada.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Especialidad</span>
+
+</div>
+</div>
+<!-- Zincronizada -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="especialidades" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Zincronizada</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Doble tortilla de harina dorada a la mantequilla con jamón, queso derretido y carne.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Especialidad</span>
+
+</div>
+</div>
+<!-- Vampira -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="especialidades" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Vampira</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tortilla de maíz tostada al carbón con queso fundido bien gratinado y carne asada.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Especialidad</span>
+
+</div>
+</div>
+<!-- Chorreada -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="especialidades" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Chorreada</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tostada untada con asiento sinaloense, queso derretido, asada picada y guarnición.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Especialidad</span>
+
+</div>
+</div>
+<!-- Bebidas: Aguas Frescas -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="bebidas" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Aguas Frescas de Sabor</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Aguas naturales del día con hielo frappé: horchata, cebada, piña y frutas de temporada.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Bebidas</span>
+
+</div>
+</div>
+<!-- Bebidas: Refrescos -->
+<div class="menu-item-card bg-surface rounded-xl p-space-md flex flex-col justify-between shadow-sm" data-category="bebidas" style="display: none;">
+<div>
+<div class="flex justify-between items-start gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Refrescos Bien Fríos</span>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Variedad de sodas en botella de vidrio y lata bien heladas para acompañar tus tacos.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">Bebidas</span>
+
+</div>
+</div>
+</div>
+<!-- Footer Note -->
+
+</div>
+</section>
+<!-- SERVICIO A DOMICILIO -->
+<section class="w-full bg-primary-container text-on-primary py-space-xl">
+<div class="max-w-7xl mx-auto px-margin lg:px-space-xl flex flex-col gap-space-lg">
+<div class="text-center max-w-3xl mx-auto">
+<div class="inline-flex items-center gap-1 bg-surface-container-lowest/20 px-space-md py-1 rounded-full mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">electric_moped</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider"><br></span>
+</div>
+<h2 class="font-headline-xl text-headline-xl font-black uppercase tracking-tight">Servicio a Domicilio</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mt-2">
+          Ven por tus tacos o te los llevamos caliente hasta tu puerta. Pide fácil y rápido.
+        </p>
+</div>
+<!-- 3 Steps -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Paso 1 -->
+<div class="bg-surface-container-lowest/10 backdrop-blur-sm p-space-lg rounded-xl flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-headline-sm font-black mb-space-sm shadow-sm">
+            1
+          </div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">Elige tu pedido</span>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">Revisa nuestras opciones de tacos, mixtas, tortas o especialidades sinaloenses.</p>
+</div>
+<!-- Paso 2 -->
+<div class="bg-surface-container-lowest/10 backdrop-blur-sm p-space-lg rounded-xl flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-headline-sm font-black mb-space-sm shadow-sm">
+            2
+          </div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">Mándanos mensaje o llámanos</span>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">Indícanos tu orden con salsas de preferencia y tu dirección en Angostura.</p>
+</div>
+<!-- Paso 3 -->
+<div class="bg-surface-container-lowest/10 backdrop-blur-sm p-space-lg rounded-xl flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-headline-sm font-black mb-space-sm shadow-sm">
+            3
+          </div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">Te lo llevamos caliente</span>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">Empacado cuidadosamente para que llegue listo para disfrutar en familia.</p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap justify-center items-center gap-space-md pt-space-xs">
+
+<a class="bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container px-space-xl py-space-sm rounded-lg font-label-lg text-label-lg font-bold shadow-lg flex items-center gap-space-xs transition-transform active:scale-95" href="tel:6971080563">
+<span class="material-symbols-outlined text-[24px]">call</span>
+<span class="">Llamar ahora: 697 108 0563</span>
+</a>
+</div>
+<!-- Delivery Area Notice -->
+<div class="text-center pt-space-xs">
+<p class="font-label-md text-label-md text-on-primary-container opacity-90">
+<span class="font-bold text-on-primary">Zona de cobertura:</span> Servicio a domicilio en Angostura Centro y zonas cercanas. Horario de entrega: 8:00 am – 11:00 pm.
+        </p>
+</div>
+</div>
+</section>
+<!-- NUESTRO LUGAR -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-margin lg:px-space-xl grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container">
+<img alt="Instalaciones y carreta moderna de Taquería Pacheco en Angostura" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVIIyPEY6nO6RypnT5kmeOPHkifkjlxHt_WJdbF7kG_z651AR3Iv2TsOzmBcFItFNid-6c8djl_-C-zjJS2vSt6hswZ-szAbqBikUK_tKI_o87WvUeZSTwV7AbgN8TZ2cFxS4uYUMKXpUELNe_KRjbbQ_9vIIah1-YoYmm2jM_Noj0z0lLI3MQlhVP2jZIWQr-CSrpG5PBe3SgGNP0eGVkx9VN79f5plgch5sxvNWLD2uwZ58owNQTsw">
+</div>
+<div class="absolute -bottom-3 -right-3 bg-primary text-on-primary px-space-md py-space-xs rounded-lg shadow-md font-label-sm text-label-sm font-black uppercase">
+          Cocina abierta e higiénica
+        </div>
+</div>
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="bg-surface-variant self-start px-space-sm py-0.5 rounded text-on-surface-variant font-label-sm text-label-sm font-bold uppercase">
+          Ambiente Familiar
+        </div>
+<h2 class="font-headline-lg text-headline-lg font-black text-on-surface uppercase leading-tight">
+          Nuestro Lugar
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          La tradición y el sazón sinaloense en el centro de Angostura. Un espacio familiar, limpio y acogedor con cocina abierta y la mejor atención de siempre. ¡Contamos con las mejores opciones!
+        </p>
+<!-- Place perks -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Carreta de acero inoxidable</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Área techada y ventilada</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Menú adaptado a toda la familia</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Salsas frescas en cada mesa</span>
+</div>
+</div>
+<div class="pt-space-xs">
+
+</div>
+</div>
+</div>
+</section>
+<!-- GALERÍA MOSAICO -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-margin lg:px-space-xl flex flex-col gap-space-lg">
+<div class="text-center max-w-xl mx-auto">
+<span class="font-label-sm text-label-sm font-black text-secondary uppercase tracking-widest block mb-1">Momentos y Sabores</span>
+<h2 class="font-headline-lg text-headline-lg font-black text-on-surface uppercase">Galería Pacheco</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Conoce de cerca lo que preparamos con amor en Angostura cada día.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-space-sm">
+<!-- Item 1 Plana -->
+<div class="relative group overflow-hidden rounded-xl bg-surface-container h-64 col-span-2 row-span-1 md:col-span-2 shadow-sm">
+<img alt="Plana taco gigante con carne asada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVwx42RMFh1RoG2_JDUXWzSqCIgB8Y9zlxZxCvGoSi0zf5D7dCBj8gwRbok7EBBBFpVF41ya8DP41fkqez_mnJfI25nrn4SodQKghgb0-ZsEC43QOGfr1_nVIPNgNCNl9-nWvw7nkKFg0W56QdNRq23JLVSEB3uJ_c2ns9dubrnPnGuSYTYUZsHFf19w3u_VcCBkgXEju57nXmxUwzE5P71b8CO0AgSB_NK25iriGuorXWTeCRf4Gt6w">
+<div class="absolute inset-0 bg-inverse-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-md">
+<span class="text-surface font-headline-sm text-headline-sm font-bold">Plana de Carne Asada</span>
+</div>
+</div>
+<!-- Item 2 Tortita Kids -->
+<div class="relative group overflow-hidden rounded-xl bg-surface-container h-64 shadow-sm">
+<img alt="Tortita Kids con aguacate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwvO2avTbQ7sZ-DIvA3ohSqzqTY65nJWjiSNLhu-ZVG51hMq_ulg8-yB4JzL1Dn68ak94-CkYmUoJUFwm6T857uxuvPGSA2kmRvS0y6UJS_A-B1SwbTEuLud7jREiQQx8McD4wunk-B_Dh_FsA7WsXAmEgBkQ5tyoLWtETzczUVz0VSoCD_vXwW7da9VMZI8c5lal2H9-K4xCY13pwbHIFDhipO_UHOI76rVf7QWO_Dj79bIMFUHE1xg">
+<div class="absolute inset-0 bg-inverse-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-sm">
+<span class="text-surface font-label-md text-label-md font-bold">Tortita Kids</span>
+</div>
+</div>
+<!-- Item 3 Menú Tradicional -->
+<div class="relative group overflow-hidden rounded-xl bg-surface-container h-64 shadow-sm">
+<img alt="Cartel oficial de menú de Taquería Pacheco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5X7M7u6KioVjWcAuckQDzA-RuRNRTNV3RG7d9SwJyJcRzYJAT6iMt36pEtcfjiM0R6X8TTZ7bCrEnB0Q9101wf_VtD5PdXfRzxVJodR2OC7K2XXK973ex7dU2qwlX68F8x-w1wk79ljbzdDnQRZ6QnebF6KFlJKDVzr-PgcdKa0CLhgAy3Y4AmpP3DfMImBIGttwM7FzRNEDR5mFM2yYGyMCaARljfSjoFTVl1U0uhGjtQQorMJUZLQ">
+<div class="absolute inset-0 bg-inverse-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-sm">
+<span class="text-surface font-label-md text-label-md font-bold">Menú y Logotipo Oficial</span>
+</div>
+</div>
+<!-- Item 4 Mixtas -->
+<div class="relative group overflow-hidden rounded-xl bg-surface-container h-64 shadow-sm">
+<img alt="Mixtas doradas con queso y carne" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6T7kzmT7QE2xlHz0cbxods4sWa3CitcqKkwUFTds1TzD4CeqXZDT7KWX8kdlsR0gxRTVMdWLxVNIVDuWGCPmhV0Noyxq-B5PqB8ECnwe_MhG8m2xf6LuwH0af0KJTwdz1tmEBk2hZMpMGohaY3xTi5soTsWB9BivR5zoZG4r9K-xIjHjDIPI6Jtmz83Bj5cV3UQWWoX6FoN_FvEn3C9fTUIz0zN8JkxqUmiTf_9TsuRBjXn6p6BJD5A">
+<div class="absolute inset-0 bg-inverse-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-sm">
+<span class="text-surface font-label-md text-label-md font-bold">Mixtas al Comal</span>
+</div>
+</div>
+<!-- Item 5 Nuestro Lugar -->
+<div class="relative group overflow-hidden rounded-xl bg-surface-container h-64 col-span-2 md:col-span-3 lg:col-span-3 shadow-sm">
+<img alt="Carreta e instalaciones reales de Taquería Pacheco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVIIyPEY6nO6RypnT5kmeOPHkifkjlxHt_WJdbF7kG_z651AR3Iv2TsOzmBcFItFNid-6c8djl_-C-zjJS2vSt6hswZ-szAbqBikUK_tKI_o87WvUeZSTwV7AbgN8TZ2cFxS4uYUMKXpUELNe_KRjbbQ_9vIIah1-YoYmm2jM_Noj0z0lLI3MQlhVP2jZIWQr-CSrpG5PBe3SgGNP0eGVkx9VN79f5plgch5sxvNWLD2uwZ58owNQTsw">
+<div class="absolute inset-0 bg-inverse-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-md">
+<span class="text-surface font-headline-sm text-headline-sm font-bold">Instalaciones en el Centro de Angostura</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- OPINIONES DE CLIENTES -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-margin lg:px-space-xl flex flex-col gap-space-lg">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm font-black text-primary uppercase tracking-widest block mb-1">Voces Locales</span>
+<h2 class="font-headline-lg text-headline-lg font-black text-on-surface uppercase">Opiniones de Nuestros Clientes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">La recomendación de la gente de Angostura es nuestro mayor orgullo.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Review 1 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center text-secondary-container mb-space-xs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Las mejores mixtas de Angostura sin duda alguna. La tortilla de harina bien doradita y la carne tiene un sazón sinaloense bárbaro. Siempre volvemos."
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface block">Carlos M. Camacho</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cliente Frecuente</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center text-secondary-container mb-space-xs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "La plana viene súper servida con bastante carne y guacamole. A mis hijos les encanta la tortita kids. Excelente servicio a domicilio, llega calientito."
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface block">Leticia Beltrán</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Familia de Angostura</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center text-secondary-container mb-space-xs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Lugar muy limpio, atienden rápido y los precios son muy justos. La papa asada y los tacos de tripa son de otro nivel. Súper recomendado."
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface block">Fernando Soto</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reseña Local Google</span>
+</div>
+</div>
+</div>
+<div class="text-center pt-space-xs">
+<a class="inline-flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface px-space-lg py-space-sm rounded-lg font-label-md text-label-md font-bold shadow-sm transition-colors" href="https://maps.google.com/?q=Taqueria+Pacheco+Angostura" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary text-[20px]">rate_review</span>
+<span class="">Déjanos tu reseña en Google Maps</span>
+</a>
+</div>
+</div>
+</section>
+<!-- UBICACIÓN Y HORARIOS -->
+<section class="w-full py-space-xl bg-surface-container-low" id="ubicacion">
+<div class="max-w-7xl mx-auto px-margin lg:px-space-xl grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Info Left -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm font-black text-primary uppercase tracking-widest block mb-1">Encuéntranos</span>
+<h2 class="font-headline-lg text-headline-lg font-black text-on-surface uppercase">Ubicación y Horarios</h2>
+</div>
+<!-- Address Card -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-variant text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">location_on</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Dirección</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              Boulevard Venustiano Carranza, Colonia Centro, C.P. 81600 Angostura, Sinaloa.
+            </p>
+</div>
+</div>
+<!-- Hours Table -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">schedule</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Horario de Servicio</span>
+</div>
+<div class="flex justify-between items-center py-2 bg-surface-container-low px-space-sm rounded">
+<span class="font-label-md text-label-md font-bold text-on-surface">Lunes a Domingo</span>
+<span class="font-label-md text-label-md text-primary font-black">8:00 am – 11:00 pm</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm">
+            Atención continua todo el día en comedor, pedidos para recoger y servicio a domicilio.
+          </p>
+</div>
+<!-- Phone Card -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-variant text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase font-bold">Teléfono de Pedidos</span>
+<a class="font-headline-sm text-headline-sm text-primary font-black hover:underline" href="tel:6971080563">697 108 0563</a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- Map & Directions Right -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="w-full h-80 rounded-2xl overflow-hidden shadow-md bg-cover bg-center" data-location="Boulevard Venustiano Carranza, Angostura Centro, Sinaloa, Mexico" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBYgOFprOo2xTuQeMmQHRh0DAfcOO9BQAcRsVltDSsleLoKbhxH5XARH45V2os3wfxmddcJgstBzrnFTN-t8blNL0_sTCwIMM1_ZXmr1Zgf6Q6m3c1cbR9RkZJjEsrCgwf1c1l2K9omRqRJFyy8GFCNVR1f1Lm8GVr4-5Q_p0zIYXPtH-dIv6ea49tsT2FbxIX_ovd6zhW_yoTxv4wyNJ8Jv_g8AfzizDMpARIGbR1X&quot;);">
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface p-space-md rounded-xl shadow-sm">
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">¿Vienes en camino?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fácil acceso en el mero centro de Angostura.&nbsp;<br>Enfrente de una gasolinera y al lado del oxo por la cien.<br></span>
+</div>
+<a class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold px-space-lg py-2 rounded-lg shadow-sm flex items-center gap-space-xs" href="https://maps.google.com/?q=Boulevard+Venustiano+Carranza+Angostura+Sinaloa" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span class="">Cómo llegar</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function filterMenu(category) {
+    const cards = document.querySelectorAll('.menu-item-card');
+    const buttons = document.querySelectorAll('.menu-filter-btn');
+
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-category') === category) {
+        btn.classList.remove('bg-surface', 'text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-on-primary');
+      } else {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface', 'text-on-surface-variant');
+      }
+    });
+
+    cards.forEach(card => {
+      const cardCat = card.getAttribute('data-category') || '';
+      if (category === 'all' || cardCat.includes(category)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script></main><a aria-label="Contactar por WhatsApp" class="fixed bottom-space-lg right-space-lg z-50 bg-tertiary-container hover:bg-tertiary text-on-tertiary w-14 h-14 rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(50,79,0,0.4)] active:scale-95 transition-transform" href="https://wa.me/526971080563" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[32px]">chat</span></a><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-7xl mx-auto px-margin lg:px-space-xl py-space-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 bg-secondary-container rounded-lg flex items-center justify-center p-1 shadow-sm"><svg class="w-8 h-8" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 L88 25 L88 75 L50 95 L12 75 L12 25 Z" fill="#FDCC16" stroke="#745B00" stroke-width="4"></path><ellipse cx="50" cy="28" fill="#745B00" rx="24" ry="7"></ellipse><path d="M40 25 C40 16 60 16 60 25 Z" fill="#AE000D"></path><path d="M48 30 C56 34 58 56 50 72 C46 64 42 50 44 38 C44 32 46 30 48 30 Z" fill="#D7191C"></path><path d="M38 52 Q50 48 62 52 Q50 62 38 52 Z" fill="#2E1505"></path><circle cx="44" cy="42" fill="#2E1505" r="2.5"></circle><circle cx="54" cy="42" fill="#2E1505" r="2.5"></circle></svg></div><span class="font-headline-sm text-headline-sm text-primary uppercase font-black">Pacheco</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Sabor auténtico de Sinaloa. Carne asada, tortillas recién hechas, chorreadas y vampiras con la receta tradicional de Angostura.</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface font-bold">Contacto</span><div class="flex items-start gap-space-xs text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">location_on</span><span class="">Boulevard Venustiano Carranza, Col. Centro, C.P. 81600 Angostura, Sinaloa.</span></div><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span><a class="hover:text-primary transition-colors" href="tel:6971080563">697 108 0563</a></div><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant"></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface font-bold">Horarios de Atención</span><div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-secondary shrink-0">schedule</span><span class="">Lunes a Domingo</span></div><p class="font-label-md text-label-md text-on-surface pl-space-lg font-bold">8:00 am – 11:00 pm</p><p class="font-body-sm text-body-sm text-on-surface-variant pl-space-lg">Servicio en comedor y pedidos para llevar o a domicilio.</p></div></div><div class="bg-surface-container py-space-md text-center text-on-surface-variant font-body-sm text-body-sm"><div class="max-w-7xl mx-auto px-margin lg:px-space-xl flex flex-col md:flex-row items-center justify-between gap-space-xs"><span class="">© 2026 Taquería Pacheco. Todos los derechos reservados. Angostura, Sinaloa.</span><span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Tradición Taquera Sinaloense</span></div></div></footer>
+
+
+
+</body></html>
